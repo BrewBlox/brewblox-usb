@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "brewblox-usb"
+version = "0.1.0"
+description = "USB-TCP bridge for Brewblox Spark"
+authors = ["BrewPi <development@brewpi.com>"]
+license = "GPLv3"
+readme = "README.md"
+packages = [{include = "brewblox_usb"}]
+
+[tool.poetry.dependencies]
+python = "~3.11"
+pyserial = "^3.5"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+invoke = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
